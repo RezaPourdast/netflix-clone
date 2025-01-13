@@ -1,0 +1,88 @@
+.navbar {
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 10%,
+    transparent
+  );
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 6%;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  font-size: 14px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.navbar-left img {
+  width: 90px;
+  cursor: pointer;
+}
+
+.navbar-left ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-left ul li {
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-left ul li:hover {
+  color: #e50914;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-right .icons {
+  width: 20px;
+  cursor: pointer;
+}
+
+.navbar-right .profile img {
+  border-radius: 4px;
+  width: 35px;
+}
+
+.navbar-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar .dropdown {
+  display: none;
+  position: absolute;
+  width: max-content;
+  top: 100%;
+  right: 0;
+  background: #333;
+  padding: 18px 22px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+}
+
+.navbar .dropdown p {
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.navbar-profile:hover .dropdown {
+  display: block;
+}
